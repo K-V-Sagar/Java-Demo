@@ -1,6 +1,7 @@
 
 public class variables {
-
+	static int i=10; //static vars can be created at level not in a method
+	
 	public static void main(String[] args) {
 		int a=10;
 		System.out.println("Value of a = "+(a+2)+"\n");

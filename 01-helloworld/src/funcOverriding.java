@@ -6,6 +6,8 @@ public class funcOverriding {
 	}
 }
 
+
+//****************** Use @override ******************
 /*public class childClass extends funcOverriding{
 	public void dispThis() {
 		System.out.println("Child class");
