@@ -33,5 +33,17 @@ public class variables {
 		System.out.println("val4="+val4);
 		System.out.println("val5="+val5);
 		System.out.println("val6"+val6);
+		
+		//defining constant variables
+		final int p=2;
+		//below throws an error as p is constant variable
+		//p=p+1; 
+		System.out.println("P : "+(p+1)); //allowed as it does not change val of p
+		System.out.println("P : "+p);
+		
+		//declaring float vals
+		//below throws error, by default in Java decimal vals are double
+		//float x = 3.14;
+		float x = 3.14f;
 	}
 }

@@ -16,5 +16,13 @@ public class forLoop {
 		}
 		System.out.println("Sum :" +n);
 		System.out.println("Count :"+count);
+		
+		//pattern
+		for(int i=0;i<5;i++) {
+			for(int j=0;j<i;j++) {
+				System.out.println("*");
+			}
+			System.out.println(" ");
+		}
 	}
 }
