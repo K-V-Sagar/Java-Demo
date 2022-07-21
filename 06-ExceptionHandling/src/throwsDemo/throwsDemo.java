@@ -4,7 +4,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 public class throwsDemo {
-
+	
+	// checked exceptions
 	void readFile() throws FileNotFoundException {
 		FileInputStream obj = new FileInputStream("C:\\javafsd\\files\\test1.txt");
 	}

@@ -1,15 +1,21 @@
-package throwsDemo;
+package customException;
 
-public class throwDemo {
-	
+//import throwsDemo.throwDemo;
+
+public class testCustom {
+
 	public static void main(String[] args) {
-		throwDemo obj = new throwDemo();
+		testCustom obj = new testCustom();
+		
 		try {
-			int withDrawAmount = 500;
+			int withDrawAmount = 5000;
 			System.out.println("Withdrawing: " + withDrawAmount);
 			obj.withdrawFromATM(withDrawAmount, 4538);
 			System.out.println("Amount Withdrawn");
-		} catch (RuntimeException ex) {
+		} 
+		
+		//catching custom exception
+		catch (noFundException ex) {
 			System.out.println("Exception Occurred. " + ex.getMessage());
 		}
 	}
@@ -17,7 +23,8 @@ public class throwDemo {
 	void withdrawFromATM(int withDrawAmount, int accountNumber) {
 		int balance = getBalanceFromAccount(accountNumber);
 		if (withDrawAmount > balance) {
-			throw new RuntimeException("Insufficient Funds");
+			//throwing custom exception
+			throw new noFundException("Insufficient funds!!!");
 		}
 	}
 	
@@ -25,4 +32,5 @@ public class throwDemo {
 		return 1000;
 	}
 
+	
 }
